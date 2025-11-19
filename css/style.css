@@ -195,3 +195,58 @@ img{
     font-size: 2rem;
 }
 
+.footer-simple {
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left p {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--blanco);
+}
+
+.footer-right {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-right a {
+    color: var(--blanco);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+    color: #cccccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .footer-right {
+        gap: 1.5rem;
+    }
+}
+
+.footer-left {
+    margin-left: 12rem; /* Ajusta este valor según necesites */
+}
