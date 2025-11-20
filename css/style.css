@@ -26,6 +26,7 @@ body{
 .contenedor{
     max-width: 120 rem;
     width: 90%;
+    width: min(90%, 120rem);
     margin: 0 auto;
 }
 a{
@@ -90,6 +91,10 @@ img{
     .header__texto{
         margin-top: 15rem;
     }
+}
+
+.barra{
+    padding-top: 4rem;
 }
 
 @media (min-width: 768px){
@@ -195,58 +200,11 @@ img{
     font-size: 2rem;
 }
 
-.footer-simple {
+.footer{
     background-color: var(--negro);
-    color: var(--blanco);
-    padding: 2rem 1rem;
-    margin-top: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 4rem;
 }
 
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/** Sobre nosotros **/
 
-.footer-left p {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin: 0;
-    color: var(--blanco);
-}
-
-.footer-right {
-    display: flex;
-    gap: 2rem;
-}
-
-.footer-right a {
-    color: var(--blanco);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-right a:hover {
-    color: #cccccc;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    }
-    
-    .footer-right {
-        gap: 1.5rem;
-    }
-}
-
-.footer-left {
-    margin-left: 12rem; /* Ajusta este valor según necesites */
-}
